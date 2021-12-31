@@ -11,7 +11,7 @@
             <div class="card card-login card-white">
                 <div class="card-header">
                     <!-- <img src="{{ asset('black') }}/img/card-primary.png" alt=""> -->
-                    <h1 class="card-title">{{ __('Log in') }}</h1>
+                    <h1 class="card-title">{{ __('Syahmi Hensem') }}</h1>
                 </div>
                 <div class="card-body">
                     <!-- <p class="text-dark mb-2">Sign in with <strong>admin@black.com</strong> and the password <strong>secret</strong></p> -->
