@@ -1,0 +1,108 @@
+li.dropdown.nav-item.profile:hover{
+    background: none;
+}
+
+div#navigation {
+    flex-direction: row;
+    flex-grow: inherit;
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #24b47e;
+}
+
+.btn-edit {    
+    height: 30px;
+}
+
+/* Nominees Page */
+#nominees tr.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* Voting List Page */
+#voting-list tr.row {
+    display: contents;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+
+  .select-selected{
+      padding: 2px 0px !important;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+@media screen and (max-width: 991px){
+    .navbar .navbar-toggler-bar.bar2{
+        width: 22px !important;
+    }
+
+    li.nav-item:hover {
+        background: rgb(225, 78, 202, 0.6);
+    }
+    
+    a.nav-link:hover {
+        color: whitesmoke !important;
+    }
+}
