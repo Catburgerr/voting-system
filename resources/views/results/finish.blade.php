@@ -9,7 +9,7 @@
       </div>
       <div class="card-body">      
         <div class="alert alert-info">
-          <span> <b> Thank you for voting! </b></span><br>
+          <span> <b> Thank you for your votes! </b></span><br>
         </div>
       </div>
     </div>
