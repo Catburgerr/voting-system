@@ -5,15 +5,11 @@
   <div class="col-lg-12 col-md-12">
     <div class="card">
       <div class="card-header">
-        <h4 class="card-title">Employee of the this month</h4>
+        <h4 class="card-title">Vote End</h4>
       </div>
-      <div class="card-body">
-        <div class="alert alert-primary">
-          <span> <b> NO 1 :</b> HAMIZAH </span>
-        </div>
+      <div class="card-body">      
         <div class="alert alert-info">
-          <span> <b> NO 2 :</b> HAMIZAH </span><br>
-          <span> <b> NO 3 :</b> HAMIZAH </span>
+          <span> <b> Thank you for voting! </b></span><br>
         </div>
       </div>
     </div>
