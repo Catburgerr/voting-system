@@ -18,7 +18,7 @@ class CreateProfilesTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('name');
             $table->string('email');
-            $table->date('dob');
+            $table->date('dob')->nullable();
             $table->string('job_role')->nullable();
             $table->string('department')->nullable();
             $table->timestamps();
