@@ -21,7 +21,7 @@
                 <li class="dropdown nav-item">
                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
                         <div class="photo">
-                            <img src="http://voting.test/black/img/anime3.png" alt="Profile Photo">
+                            <img src="http://catburger.online/black/img/anime3.png" alt="Profile Photo">
                         </div>
                         <b class="caret d-none d-lg-block d-xl-block"></b>
                         <p class="d-lg-none">Log out</p>
