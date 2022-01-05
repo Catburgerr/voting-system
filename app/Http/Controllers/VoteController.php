@@ -143,9 +143,13 @@ class VoteController extends Controller
         $vote = Vote::with('profiles')
         ->where('code',$code)
         ->first();
+
+        if (empty($vote)) {            
+            return back()->withStatus(__('Code invalid'));  
+        }
         
         $vote_id = $vote->id;        
-        $user_id = auth()->user()->id;
+        $user_id = auth()->user()->id;        
 
         $voters = Voter::where('user_id',$user_id)
         ->where('vote_id',$vote_id)
@@ -157,10 +161,11 @@ class VoteController extends Controller
             } else {
                 return back()->withStatus(__('You have submitted your vote this election.'));  
             }
-
-        } else { 
+        } elseif (!$vote->is_active) { 
             return back()->withStatus(__('Vote is not active.'));       
-        } 
+        } else {            
+            return back()->withStatus(__('Please try again'));  
+        }
     }
 
     public function generateCode() {
