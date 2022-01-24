@@ -56,6 +56,22 @@
                                 @endif
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <h7><strong>Total Voters</strong></h7><br>
+                                @php 
+                                    $total_voters = 0; 
+                                @endphp
+                                @foreach ($vote->profiles as $profile)
+                                    @if (!empty($profile->result->count))
+                                    @php
+                                        $total_voters += $profile->result->count;
+                                    @endphp
+                                    @endif                                    
+                                @endforeach
+                                <h7>{{$total_voters}}</h7>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
